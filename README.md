@@ -28,19 +28,24 @@ in this section, we will be gathering 3 different data from 3 sources;
 
 # **ASSESSING DATA**
 In this section, we assess the datasets we gathered to identify and highlight  data quality and tidiness issues, this is also an excellent way to understand the data that we have acquired
+- **Quality issues**
+which includes Completeness, Validity, Accuracy, Consistency : • unusual names for dogs like None,a,bo etc • numerator and denominator in ratings that are not according to rules • datatype for timestamp column in archive dataset • columns in archive like retweeted_status_id ,retweeted_status_user_id etc. • datatype for datetime column in tweet • user_favourites,user_followers are redundant columns in tweets dataset • missing values as number of rows not equal in all datasets
 
-# **Data Quality Issues**
+- **Tidiness issues**
+which includes structural issues : • stage variable in four columns: doggo, floofer, pupper, puppo • three different datasets for same data 'df_tweet' and 'df_image' and ‘df_archive'
+
+
+# **DATA CLEANING**
+ **Cleaning for Messy Issues**
+in this stage, we will merge all three datasets into 1, and address all the tidiness issues we have identified in the assesing stage
 from assessing this data set, we are able to identify as couple of structuaral and data quality issues
 - we can see we clearly have a lot of missing values,in columns; in_reply_to_status_id,in_reply_to_user_id,retweeted_status_id,retweeted_user_id,retweeted_status_timestamp (more than 80% of the data is missing) and the expanded_urls feature(having less than 5% missing in this case)
 -the name feature seems to be inconsistency in the names, that ought to be fixed
 - we can also observe some messyness in the text columns, where we have links attached to the text, as well as the rating too. the column should ideally hold only text
 - we can also observe that in the source feature, we have html tags enclosing the source. this ought not be the case
-- in the image predictions dataset, specifically in the p1,p2p3 columns, there appears to be an underscore making the feature messy, that ought not to be the case
 
-# **Data Tidiness**
-- the last four columns indicate the dog type, all of that info can be represented in a single column, there also appears to be alot of None values, so roughly 60% of the values are None
-- there appears to be redundant features in the dataset, for instance that are irrelevant for our analysis 
+ **Cleaning for Data Tidiness**
+- the last four columns indicate the dog type, all of that info can be represented in a single column, there also appears to be alot of None values, so roughly 60% of the values are None, they will be changed to Nan and later on dropped
+- there appears to be redundant features in the dataset, for instance that are irrelevant for my  analysis, these will be dropped 
 - the image number feature in the image predictions data set seems irrelevant to the analysis as such should be dropped
 
-# **DATA CLEANING**
-in this stage, we will merge all three datasets into 1, and address all the tidiness issues we have identified in the assesing stage
