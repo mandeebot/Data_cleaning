@@ -18,7 +18,7 @@ One more cool thing: I ran every image in the WeRateDogs Twitter archive through
 - Data gathering,
 - Assesing
 - Cleaning
-- Exploratory Analysis 
+- Storage 
 
 # **DATA GATHERING**
 in this section, we will be gathering 3 different data from 3 sources;
@@ -37,6 +37,7 @@ which includes structural issues : • stage variable in four columns: doggo, fl
 
 # **DATA CLEANING**
  **Cleaning for Messy Issues**
+ 
 in this stage, we will merge all three datasets into 1, and address all the tidiness issues we have identified in the assesing stage
 from assessing this data set, we are able to identify as couple of structuaral and data quality issues
 - we can see we clearly have a lot of missing values,in columns; in_reply_to_status_id,in_reply_to_user_id,retweeted_status_id,retweeted_user_id,retweeted_status_timestamp (more than 80% of the data is missing) and the expanded_urls feature(having less than 5% missing in this case)
@@ -49,3 +50,5 @@ from assessing this data set, we are able to identify as couple of structuaral a
 - there appears to be redundant features in the dataset, for instance that are irrelevant for my  analysis, these will be dropped 
 - the image number feature in the image predictions data set seems irrelevant to the analysis as such should be dropped
 
+# **DATA STORING**
+storing our cleaned master dataset as a csv formate file for easy storage, other stoorage options include being saved in a database.
