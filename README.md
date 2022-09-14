@@ -19,6 +19,7 @@ One more cool thing: I ran every image in the WeRateDogs Twitter archive through
 - Assesing
 - Cleaning
 - Storage 
+- Visualizing and Analyzing Wranggled Data
 
 # **DATA GATHERING**
 in this section, we will be gathering 3 different data from 3 sources;
@@ -51,4 +52,9 @@ from assessing this data set, we are able to identify as couple of structuaral a
 - the image number feature in the image predictions data set seems irrelevant to the analysis as such should be dropped
 
 # **DATA STORING**
-storing our cleaned master dataset as a csv formate file for easy storage, other stoorage options include being saved in a database.
+storing our cleaned master dataset as a csv formate file for easy storage, other stoorage options include being saved in a database
+
+#**Data Visualization and Analysis**
+Analyze and visualize your wrangled data in your wrangle data to derive insights and to communicate your findings. At least three (3) insights and one (1) visualization must be produced.
+
+
