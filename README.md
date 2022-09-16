@@ -63,7 +63,7 @@ from assessing this data set, we are able to identify as couple of structuaral a
 # **DATA STORING**
 storing our cleaned master dataset as a csv formate file for easy storage, other stoorage options include being saved in a database
 
-#**Data Visualization and Analysis**
+# **Data Visualization and Analysis**
 Analyze and visualize your wrangled data in your wrangle data to derive insights and to communicate your findings. At least three (3) insights and one (1) visualization must be produced.
 
 
