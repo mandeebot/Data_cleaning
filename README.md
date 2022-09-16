@@ -29,11 +29,20 @@ in this section, we will be gathering 3 different data from 3 sources;
 
 # **ASSESSING DATA**
 In this section, we assess the datasets we gathered to identify and highlight  data quality and tidiness issues, this is also an excellent way to understand the data that we have acquired
-- **Quality issues**
-which includes Completeness, Validity, Accuracy, Consistency : • unusual names for dogs like None,a,bo etc • numerator and denominator in ratings that are not according to rules • datatype for timestamp column in archive dataset • columns in archive like retweeted_status_id ,retweeted_status_user_id etc. • datatype for datetime column in tweet • user_favourites,user_followers are redundant columns in tweets dataset • missing values as number of rows not equal in all datasets
 
-- **Tidiness issues**
-which includes structural issues : • stage variable in four columns: doggo, floofer, pupper, puppo • three different datasets for same data 'df_tweet' and 'df_image' and ‘df_archive'
+ **Quality issues**
+which includes Completeness, Validity, Accuracy, Consistency ; 
+- unusual names for dogs like None,a,bo etc 
+- numerator and denominator in ratings that are not according to rules
+- datatype for timestamp column in archive dataset
+- columns in archive like retweeted_status_id ,retweeted_status_user_id etc.
+- datatype for datetime column in tweet • user_favourites,user_followers are redundant columns in tweets dataset 
+- missing values as number of rows not equal in all datasets
+
+ **Tidiness issues**
+which includes structural issues; 
+- stage variable in four columns: doggo, floofer, pupper, puppo
+- three different datasets for same data 'df_tweet' and 'df_image' and ‘df_archive'
 
 
 # **DATA CLEANING**
